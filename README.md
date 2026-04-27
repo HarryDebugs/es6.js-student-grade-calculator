@@ -1,4 +1,4 @@
-# Harry Jay William C | Student Marks Calculator using JavaScript ES6
+# Student Marks Calculator using JavaScript ES6
 
 A JavaScript-based webpage developed by **Harry Jay William C**. The project computes and displays a student's total marks, average, and grade using ES6 features.
 

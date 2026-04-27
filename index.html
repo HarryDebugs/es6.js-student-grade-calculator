@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Harry Jay William C">
+    <title>Student Marks Calculator using JavaScript ES6</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="app-shell">
+        <section class="calculator-panel" aria-labelledby="page-title">
+            <div class="panel-copy">
+                <p class="eyebrow">Developed by Harry Jay William C</p>
+                <h1 id="page-title">Student Marks Calculator</h1>
+                <p>
+                    Enter the marks for each subject to calculate the total,
+                    average, and final grade instantly on the page.
+                </p>
+            </div>
+
+            <form class="marks-form" id="marksForm">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+
+                <div class="subjects-grid">
+                    <div class="form-group">
+                        <label for="english">English</label>
+                        <input type="number" id="english" name="english" min="0" max="100" placeholder="0 - 100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maths">Mathematics</label>
+                        <input type="number" id="maths" name="maths" min="0" max="100" placeholder="0 - 100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="science">Science</label>
+                        <input type="number" id="science" name="science" min="0" max="100" placeholder="0 - 100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="computer">Computer Science</label>
+                        <input type="number" id="computer" name="computer" min="0" max="100" placeholder="0 - 100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="social">Social Studies</label>
+                        <input type="number" id="social" name="social" min="0" max="100" placeholder="0 - 100" required>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button type="submit">Calculate Result</button>
+                    <button class="secondary-button" type="reset">Clear</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="result-panel" aria-live="polite" aria-labelledby="result-title">
+            <p class="eyebrow">Result</p>
+            <h2 id="result-title">Marks Summary</h2>
+            <div class="result-output" id="resultOutput">
+                <p class="empty-message">Your student's result will appear here after calculation.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
